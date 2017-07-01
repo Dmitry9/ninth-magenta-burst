@@ -1,0 +1,24 @@
+<link rel="import" href="bower_components/polymerfire/firebase-app.html">
+<link rel="import" href="my-login.html">
+<link rel="import" href="my-notes.html">
+<link rel="import" href="my-subscription.html">
+
+<dom-module id="my-app">
+	<template>
+		<firebase-app
+		  auth-domain="ninth-magenta-burst.firebaseapp.com"
+		  database-url="https://ninth-magenta-burst.firebaseio.com/"
+		  api-key="AIzaSyCeUJZmO-02x1POlVcuWAD7fBSuJaJeSdo"
+		  messaging-sender-id="314179542535">
+		  <!-- storage-bucket="ninth-magenta-burst.firebaseapp.com" -->
+		</firebase-app>
+		<my-notes></my-notes>
+		<my-login></my-login>
+		<my-subscription></my-subscription>
+	</template>
+	<script>
+		Polymer({
+			is: 'my-app'
+		});
+	</script>
+</dom-module>
